@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./main.js"></script>
+
     <title>Calculadora Pitágoras</title>
 </head>
+
 <body>
     <h1 id="titulo">Calculadora de Pitágoras</h1>
 
-    <p>"A Soma dos quadrados dos catetos é igual ao quadrado da hipotenusa."</p>
+    <h5>"A Soma dos quadrados dos catetos é igual ao quadrado da hipotenusa."</h5>
 
-    <div class="numeros">
-        <input type="number" min="1" id="cat-a" class="numeroinput">
-        <input type="number" min="1" id="cat-b" class="numeroinput">
-        <input type="number" min="1" id="hip-c" class="numeroinput">
+    <div class="row">
+        <div class="form-group col-md-3">
+            <p class="nome">Cateto Oposto</p>
+            <input type="number" class="form-control" id="catetoOposto">
+        </div>
+        <div class="form-group col-md-3">
+            <p class="nome">Cateto Adjacente</p>
+            <input type="number" class="form-control" id="catetoAdjacente">
+        </div>
+        <div class="form-group col-md-3">
+            <p class="nome">Hipotenusa</p>
+            <input type="number" class="form-control" id="hipotenusa">
+        </div>
+    </div>
+    <div class="botao">
+        <div class="btn-ver">
+            <button type="button" class="btn btn-success" onclick="Calcula()">Calcular</button>
+        </div>
     </div>
 
-    <div id="resultado"></div>    
-    
 </body>
+
 </html>

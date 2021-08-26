@@ -1,11 +1,13 @@
-var cata = document.getElementById("cat-a");
-var catb = document.getElementById("cat-b");
-var hipc = document.getElementById("hip-c");
-var resp = document.getElementById("resultado");
+function Calcula() {
+            var catetoOposto = document.getElementById("catetoOposto").value;
+            var catetoAdjacente = document.getElementById("catetoAdjacente").value;
 
-function result() {
-    var a = Number(cata.value) ** 2;
-    var b = Number(catb.value) ** 2;
-    var c = Number(hipc.value) ** 2;
-    
-}
+            var hipotenusa = Math.sqrt( Math.pow(catetoOposto, 2) + Math.pow(catetoAdjacente, 2));
+
+            var inputHipotenusa = document.getElementById("hipotenusa");
+            inputHipotenusa.value = hipotenusa;
+
+        }
+
+
+
