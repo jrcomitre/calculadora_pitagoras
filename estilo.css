@@ -16,19 +16,20 @@ h1 {
 h5 {    
     text-align: center;
     font-style: italic;
-    padding-bottom: 70px;
+    padding: 20px;
     color: azure;
 }
 
 .flex-center{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-flow: row wrap;
+    padding-top: 40px;
 }
 
 .btn-ver{    
     text-align: center;
-    padding: 70px;
+    padding-top: 70px;
 }
 
